@@ -1,0 +1,318 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Raveena's Blog"
+theme: hugo-profile
+
+Paginate: 3
+disqusShortname: gurusabarish
+googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+#Menus:
+#  main:
+#     - identifier: blog
+#        name: Blog
+#      title: Blog posts
+#      url: /blogs
+#      weight: 1
+
+#    - identifier: gallery
+#      name: Gallery
+#      title: Blog posts
+#      url: /gallery
+#      weight: 2
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Raveena's blog"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/rr.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" 
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableProjects: true
+  #	disableEducation: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Raveena"
+    subtitle: "Data into Insights Transformer"
+    content: "I’m motivated by digging into data. Give me a spreadsheet and no. of questions and I’m eager to find out what’s driving the numbers!"
+    image: /images/ravs_cropped.jpg
+    button:
+      enable: true
+      name: "CV"
+      url: "https://drive.google.com/file/d/1w6hdN3BKnxWIWoT8qK-FOo5KL8WtdUF9/view?usp=sharing"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/raveenaclr
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/raveena-chakrapani-444a60174/
+      
+      
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    #image: "/images/ravs.png"
+    content: |-
+      I am a Master's student at SMU (MITB) passionate about the use of Analytics & Business Intelligence for achieving Business Value.  
+      
+      I am currently working as a Supply Chain Analyst Intern in Lenovo SG and possess 2.5 years of work experience in FMCG domain as a Project Associate.  
+       
+
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Python"
+        - "My SQL"
+        - "R Studio"
+        - "R Shiny"
+        - "Power BI"
+        - "Tableau"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Work Experience & Education"
+    items:
+      - job: "Supply Chain Analyst Intern"
+        company: "Lenovo"
+        companyUrl: "https://www.lenovo.com/sg/en/pc"
+        date: "May 2022 - present"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: 
+        content: |
+          I am currently working on building Recommendation Systems as a part of Guided Selling project for Sales Representatives. 
+          
+          - Tweaked the existing analytics models/output and helped the team in forecasting the supplier commit value and its accuracy using Python
+          - Experimented feature selection techniques to find the significant variables to improve the Supply Commit Accuracy Prediction model  		
+      - job: "Graduate Teaching Assistant"
+        company: "SMU"
+        companyUrl: "https://www.smu.edu.sg/"
+        date: "Aug 2022 - Nov 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: 
+        content: |
+          I am working as a Part-Time Graduate Teaching Assistant-Applied Statistical Analysis with R at Singapore Management University.  
+
+          - Supported lead Professor creating lesson plans, quiz questions
+          - Conducted R Shiny workshops for freshmen teaching Shiny UI
+
+
+      - job: "Project Associate"
+        company: "Cavinkare"
+        companyUrl: "https://cavinkare.com/"
+        date: "June 2019 - Dec 2021"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          I worked in Cavinkare as a Project Associate successfully coordinating and implementing multiple in-house projects that bridged the requirements of Business divisions & IT.  
+
+          - Experience in Data Mining and analyzing from company databases to drive optimization.
+          - Populated End of Day Performance Report and management Information System (MIS) Reports for Management Review
+
+      - job: "MITB (Data Analytics)"
+        company: "Masters"
+        companyUrl: "https://scis.smu.edu.sg/master-it-business/"
+        date: "Jan 2022 - Dec 2022"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          Courses Taken
+
+          - Data Science for Business
+          - Applied Analytical Statistics with R
+          - Visual Analytics
+          - Python for Programming & Data Analysis
+          - Applied Healthcare Analytics
+          - Applied Geospatial Analytics
+          - IT Project & Vendor Management
+          - Digital Tansformation & Strategy
+          - Cybersecurity Technology & Applications
+          - Spreadsheet Modeling
+          - IoT Technology & Applications
+
+      - job: "B.E.(ECE) - CEG, Anna University"
+        company: "Bachelors"
+        companyUrl: "https://www.annauniv.edu/"
+        date: "Aug 2015 - April 2019"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          Projects
+          - Designed an obstacle avoiding trolley which is self automated and human follower using Raspberry Pi, 5 Mp camera module, chassis along with wheels, pair of Dc motors and L293D motor driverxperience in Data Mining and analyzing from company databases to drive optimization.
+          - Designed a Hand Gesture Controlled Robot using Arduino. This Hand Gesture Controlled Robot is based on Arduino Nano, MPU6050, RF Transmitter-Receiver Pair and Motor Driver.
+          - Designed an electronic pest repeller using 555 timer IC which produces ultrasonic frequencies by adjusting the variable pot resisitor.
+
+  # Projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Healthcare Analytics
+        content: Benchmarking Emergency Department Triage Prediction Models with Machine Learning
+        image: /images/projects/health.jpg
+        featured:
+          name: Demo
+          link: https://github.com/raveenaclr/Benchmarking-Emergency-Department-Triage-Prediction-Models-with-Machine-Learning-
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/raveenaclr/Benchmarking-Emergency-Department-Triage-Prediction-Models-with-Machine-Learning-
+
+      - title: eCommerce & Retail Analytics
+        content: Identifying Ideal Customer Profiles for a Restaurant Reservation Platform in Singapore
+        image: /images/projects/segmentation.png
+        featured:
+          name: Demo
+          link: https://github.com/raveenaclr/Identifying-Ideal-Customer-Profiles-for-a-Restaurant-Reservation-Platform-in-Singapore-
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/raveenaclr/Identifying-Ideal-Customer-Profiles-for-a-Restaurant-Reservation-Platform-in-Singapore-
+
+      - title: Financial Technology & Analytics
+        content: Building model to predict fraud automobile insurance claims
+        image: /images/projects/fraud.png
+        featured:
+          name: Demo
+          link: https://github.com/raveenaclr/Building-model-to-predict-fraud-automobile-insurance-claims-
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/raveenaclr/Building-model-to-predict-fraud-automobile-insurance-claims-
+
+
+  # Beyond Academics
+  achievements:
+    enable: true
+    title: "Beyond Academics"
+    items:
+      - title: IEEE VAST Challenge 2022
+        content: Built an interactive Visualization system using R Shiny to understand the financial health of the Ohio city.Used advanced charts and graphs to visualize the employment pattern, cost of living vs expenses of the residents
+        url: https://wealthcheckup.netlify.app/
+      - title: The Women’s Forum Youth Lab Tech4Women
+        content: Provided Tech solutions to reduce gender inequalities in STEM fields and to provide women with STEM skills to adapt to the evolving needs of the labour market.
+        url: https://www.agorize.com/en/challenges/tech-4-women-the-women-s-forum-youth-lab/pages/ressources?lang=en
+      - title: Tableau Dashboards
+        content: Developed tableau dashboards using advanced charts and interactive visualisations
+        url: https://public.tableau.com/app/profile/raveena.chakrapani/viz/
+      - title: Comparative Analysis Dashboard
+        content: Created dashboard in Power BI with automated cleaning using Python & scheduled refresh of latest data. Displayed a comparison of Current Year Sales with Previous Year sales and YoY sales growth % and Budgeted Sales data along with Budget Variance %
+        url: https://github.com/raveenaclr/Comparative-Analysis-Dashboard
+      - title: Quality Analysis Dashboard
+        content: Created dashboard which displays Total Task, Sample, Defect, Fatal Error, and Quality Score.Displayed multiple charts and cards for various metrics such as Samples Vs Defect Analysis, Fatal Error by Month, Quality score by Supervisor, Quality score by Work.
+        url: https://github.com/raveenaclr/Quality-Analysis-Dashboard
+
+  #Contact
+  contact:
+    enable: true
+    #title: "Custom name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: raveenachakrapani@gmail.com
+    btnName: Mail me
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/raveenaclr
+      linkedin: https://www.linkedin.com/in/raveena-chakrapani-444a60174/
+      facebook: https://www.facebook.com/raveena.chakrapani/
